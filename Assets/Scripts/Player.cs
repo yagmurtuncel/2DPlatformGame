@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
 
     public static int health;
     public static int maxHealth = 3;
+    private Scene Level10;
 
     void Start()
     {
@@ -74,7 +75,6 @@ public class Player : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             PlayerPrefs.SetInt("yeniScore", score);
-            
         }
 
         if (collision.CompareTag("WeakPoint"))

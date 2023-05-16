@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));
         Player.isStart = true;
         Player.score = PlayerPrefs.GetInt("yeniScore");
-        Player.health = PlayerPrefs.GetInt("health");
+        
     }
     #endregion
 
